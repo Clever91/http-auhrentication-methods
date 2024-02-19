@@ -2,7 +2,7 @@
 
 include_once "auth.php";
 
-if (!authenticate()) {
+if (!basic_authenticate()) {
     header('WWW-Authenticate: Basic unauthorized');
     header("HTTP/1.1 401 Unauthorized");
     exit();

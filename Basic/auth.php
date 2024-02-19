@@ -3,7 +3,7 @@
 const USERNAME = "username";
 const USERPASS = "userpass";
 
-function authenticate() {
+function basic_authenticate() {
     if (!isset($_SERVER["HTTP_AUTHORIZATION"])) {
         return false;
     }
