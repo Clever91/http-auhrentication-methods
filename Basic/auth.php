@@ -1,7 +1,6 @@
 <?php
 
-const USERNAME = "username";
-const USERPASS = "userpass";
+include_once "../env.php";
 
 function basic_authenticate() {
     if (!isset($_SERVER["HTTP_AUTHORIZATION"])) {

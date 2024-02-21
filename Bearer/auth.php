@@ -1,8 +1,6 @@
 <?php
 
-include_once "../Basic/auth.php";
-
-const BEARER_TOKEN = "this_is_bearer_token";
+include_once "../env.php";
 
 function bearer_authenticate() 
 {
