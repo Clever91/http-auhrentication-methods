@@ -2,7 +2,7 @@
 
 // ini_set('display_errors', 1);
 // ini_set('display_startup_errors', 1);
-// error_reporting(E_ERROR);
+error_reporting(E_ERROR);
 
 include_once "auth.php";
 
@@ -11,7 +11,7 @@ header("Content-Type: application/json");
 if (!bearer_authenticate()) {
     header('WWW-Authenticate: Bearer realm=Authorization Required');
     header("HTTP/1.1 401 Unauthorized");
-    echo json_encode(["fail" => true]);
+    echo json_encode(["auth" => false]);
     exit();
 }
 

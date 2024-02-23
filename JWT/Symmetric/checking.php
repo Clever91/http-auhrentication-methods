@@ -11,7 +11,7 @@ header("Content-Type: application/json");
 function failResponse()
 {
     header("HTTP/1.1 401 Unauthorized");
-    echo json_encode(["fail" => true]);
+    echo json_encode(["auth" => false]);
     exit();
 }
 
